@@ -1,1 +1,28 @@
+import java.util.LinkedList;
+import java.util.Iterator;
+
+public class LinkedListReverseIteration {
+    public static void main(String[] args) {
+        // Create a LinkedList of color names
+        LinkedList<String> colors = new LinkedList<>();
+
+        // Add color names to the list
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
+        colors.add("Yellow");
+        colors.add("Black");
+
+        // Display the original list
+        System.out.println("Original Colors List: " + colors);
+
+        // Use descendingIterator() to iterate in reverse order
+        System.out.println("Colors in reverse order:");
+        Iterator<String> reverseIterator = colors.descendingIterator();
+
+        while (reverseIterator.hasNext()) {
+            System.out.println(reverseIterator.next());
+        }
+    }
+}
 
