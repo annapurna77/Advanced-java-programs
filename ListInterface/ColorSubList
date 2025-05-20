@@ -1,1 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ColorSubList {
+    public static void main(String[] args) {
+        // Create an ArrayList and add color names
+        ArrayList<String> colors = new ArrayList<>();
+
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
+        colors.add("Yellow");
+        colors.add("Black");
+
+        // Display original list
+        System.out.println("Original Colors List: " + colors);
+
+        // Extract 1st and 2nd elements using subList()
+        // subList(fromIndex, toIndex) is exclusive of toIndex
+        List<String> subList = colors.subList(0, 2);
+
+        // Display the sublist
+        System.out.println("Extracted Sublist (1st and 2nd elements): " + subList);
+    }
+}
 
