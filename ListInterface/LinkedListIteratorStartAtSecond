@@ -1,1 +1,28 @@
+import java.util.LinkedList;
+import java.util.ListIterator;
+
+public class LinkedListIteratorStartAtSecond {
+    public static void main(String[] args) {
+        // Create a LinkedList of color names
+        LinkedList<String> colors = new LinkedList<>();
+
+        // Add some colors
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
+        colors.add("Yellow");
+        colors.add("Black");
+
+        // Display the original list
+        System.out.println("Full Colors List: " + colors);
+
+        // Start iterating from the 2nd position (index 1)
+        System.out.println("Iterating from 2nd position (index 1):");
+
+        ListIterator<String> iterator = colors.listIterator(1);
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+}
 
