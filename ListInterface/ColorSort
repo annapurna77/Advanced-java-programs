@@ -1,1 +1,26 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ColorSort {
+    public static void main(String[] args) {
+        // Create an ArrayList of colors
+        ArrayList<String> colors = new ArrayList<>();
+
+        // Add color names to the ArrayList
+        colors.add("Red");
+        colors.add("Blue");
+        colors.add("Green");
+        colors.add("Yellow");
+        colors.add("Black");
+
+        // Display original list
+        System.out.println("Original Colors List: " + colors);
+
+        // Sort the list using Collections.sort()
+        Collections.sort(colors);
+
+        // Display sorted list
+        System.out.println("Sorted Colors List (Alphabetical Order): " + colors);
+    }
+}
 
