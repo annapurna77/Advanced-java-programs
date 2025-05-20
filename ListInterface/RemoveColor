@@ -1,1 +1,38 @@
+import java.util.ArrayList;
+
+public class RemoveColor {
+    public static void main(String[] args) {
+        // Create an ArrayList of colors
+        ArrayList<String> colors = new ArrayList<>();
+
+        // Add some colors to the list
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
+        colors.add("Yellow");
+        colors.add("Black");
+
+        // Display original list
+        System.out.println("Original Colors List: " + colors);
+
+        // Remove the 2nd element (index 1)
+        if (colors.size() > 1) {
+            String removedByIndex = colors.remove(1);
+            System.out.println("Removed 2nd element (index 1): " + removedByIndex);
+        } else {
+            System.out.println("List does not have a 2nd element to remove.");
+        }
+
+        // Remove color "Blue"
+        boolean removedBlue = colors.remove("Blue");
+        if (removedBlue) {
+            System.out.println("Color 'Blue' removed from the list.");
+        } else {
+            System.out.println("Color 'Blue' not found in the list.");
+        }
+
+        // Display final list
+        System.out.println("Final Colors List: " + colors);
+    }
+}
 
